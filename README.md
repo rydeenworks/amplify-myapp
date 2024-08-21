@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+2024-08-14
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 背景
 
-Currently, two official plugins are available:
+- AWS Amplifyについて[QuickStartの内容](https://docs.amplify.aws/react/start/quickstart/)をもっと掘り下げて理解したい
+  - QuickStartでは公式が用意したGitHubのテンプレートリポジトリをコピーした
+  - テンプレートの中身を理解したい
+- ちょうど良いQiita記事があったので参考にして手を動かしてみる
+  - [手を動かして0から理解するAmplify Gen2](https://qiita.com/moritalous/items/76a05676a564960ac974)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 内容
 
-## Expanding the ESLint configuration
+## 環境
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- node: v22.5.1
+- npm: 10.8.2
+- aws: aws-cli/2.17.12 Python/3.11.9 Darwin/22.6.0 exe/x86_64
+- AWSクライアントのインストールおよびAWS認証情報(defaultプロファイル作成)は準備済み
+  - 準備手順は[チュートリアル(Configure AWS for local development)](https://docs.amplify.aws/react/start/account-setup/)の通り
 
-- Configure the top-level `parserOptions` property like this:
+## Reactプロジェクトを作成
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Viteを使ってReact+TypeScriptのプロジェクトを作成する
+  - コマンド実行してテンプレートが生成されるだけなので、特に問題なし
+  - https://github.com/rydeenworks/amplify-myapp/commit/c98db95fcf6805d65fc7c529cacbfd236d27b2ea
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## プロジェクトにAmplifyを追加
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- npmでAmplifyライブラリを追加する
+  - package.jsonとpackage-lock.jsonが更新される
+  - --save-devオプションは調べて理解した
+    - [【npm初心者】なんんとなく使っていた npm install の --save-dev ついて調べてみた](https://zenn.dev/hrkmtsmt/articles/5f4a0e5c79b77a)
+  - https://github.com/rydeenworks/amplify-myapp/commit/14b51883a7dfeefe2022c7dbd14e8401f8d16e06
+- amplify/backend.tsを作成する
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+# 参考
+
+- [AWS Amplify でのフルスタックデプロイ機能が拡張: あらゆる規模のチームに対応](https://aws.amazon.com/jp/blogs/news/team-workflows-amplify/)
+  - "AWS CDK との統合"の説明が簡潔でわかりやすい
