@@ -1,0 +1,19 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "9cd9f08de4c03425e415365fe7f9281a23efcab9830fc42a45a7fe02c7fbdd65": {
+      "source": {
+        "path": "amplify-gen2app-rydeen-sandbox-012aa54a1e.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "9cd9f08de4c03425e415365fe7f9281a23efcab9830fc42a45a7fe02c7fbdd65.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
