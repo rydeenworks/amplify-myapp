@@ -58,6 +58,9 @@
       - [2. Create password for user](https://docs.amplify.aws/react/start/account-setup/#2-create-password-for-user)で設定したユーザ名・パスワードでOKだった
     - [Use cloud sandbox in dev environment](https://docs.amplify.aws/react/deploy-and-host/sandbox-environments/setup/)が詳しい説明
     - [Sandbox features](https://docs.amplify.aws/react/deploy-and-host/sandbox-environments/features/)に高度な使い方の説明がある
+  - https://github.com/rydeenworks/amplify-myapp/commit/04bdd03c8a9e0cd3d2224346f4343ef345d760c6
+  - スターターテンプレートを使わない場合、自分で.gitignoreにAmplify関連の除外ファイルを設定する必要がある
+    - 今回は全部ログを残したかったので除外ファイル設定しなかったが、セキュリティ面で心配なのでsandbox環境のバックグランドリソースは削除しておく
   - QuickStartの場合、テンプレートアプリをAmplifyにデプロイした後で、[4. ローカル環境の設定](https://docs.amplify.aws/react/start/quickstart/#4-set-up-local-environment)でamplify_outputs.jsonをAmplifyコンソールからダウンロードして、ローカルに設置してサンドボックス起動する手順となっている
   - Qiita記事の場合、Amplifyにデプロイする前にサンドボックスを起動する
 
