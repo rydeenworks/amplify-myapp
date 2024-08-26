@@ -61,8 +61,15 @@
   - https://github.com/rydeenworks/amplify-myapp/commit/04bdd03c8a9e0cd3d2224346f4343ef345d760c6
   - スターターテンプレートを使わない場合、自分で.gitignoreにAmplify関連の除外ファイルを設定する必要がある
     - 今回は全部ログを残したかったので除外ファイル設定しなかったが、セキュリティ面で心配なのでsandbox環境のバックグランドリソースは削除しておく
-  - QuickStartの場合、テンプレートアプリをAmplifyにデプロイした後で、[4. ローカル環境の設定](https://docs.amplify.aws/react/start/quickstart/#4-set-up-local-environment)でamplify_outputs.jsonをAmplifyコンソールからダウンロードして、ローカルに設置してサンドボックス起動する手順となっている
-  - Qiita記事の場合、Amplifyにデプロイする前にサンドボックスを起動する
+  - QuickStartとQiitaの手順の違いを分析すると、システムの挙動について理解できそう
+    - QuickStartの場合、テンプレートアプリをAmplifyにデプロイした後で、[4. ローカル環境の設定](https://docs.amplify.aws/react/start/quickstart/#4-set-up-local-environment)でamplify_outputs.jsonをAmplifyコンソールからダウンロードして、ローカルに設置してサンドボックス起動する手順となっている
+    - Qiita記事の場合、Amplifyにデプロイする前にサンドボックスを起動する
+
+## 認証機能（Cognito）を追加
+
+- サンドボックス起動中にbackend.tsファイルにauthを追加して保存すると、変更を検知してバックエンドリソースを自動で構築したことがコンソールログでわかる
+  - logicalID: auth179371D7, type: AWS::CloudFormation::Stack, reason: resource 'auth179371D7' was created by this deployment
+
 
 # 参考
 
