@@ -67,8 +67,16 @@
 
 ## 認証機能（Cognito）を追加
 
-- サンドボックス起動中にbackend.tsファイルにauthを追加して保存すると、変更を検知してバックエンドリソースを自動で構築したことがコンソールログでわかる
-  - logicalID: auth179371D7, type: AWS::CloudFormation::Stack, reason: resource 'auth179371D7' was created by this deployment
+### バックエンド側
+
+- サンドボックス起動中にbackend.tsファイルにauthを追加して保存する
+  - ファイル保存を検知してバックエンドリソースを自動で構築したことがコンソールログでわかる
+    - logicalID: auth179371D7, type: AWS::CloudFormation::Stack, reason: resource 'auth179371D7' was created by this deployment
+  - AWS CloudFormationサービスのページを確認すると、スタックが構築されていることが確認できた
+  - https://github.com/rydeenworks/amplify-myapp/commit/2f3a087442b196d7deacc8c3cc348eb046a44b55
+
+### フロントエンド側
+
 
 
 # 参考
