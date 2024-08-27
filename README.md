@@ -1,4 +1,4 @@
-2024-08-14
+[手を動かして0から理解するAmplify Gen2](https://qiita.com/moritalous/items/76a05676a564960ac974)の記録
 
 # 背景
 
@@ -82,9 +82,11 @@
 - npm add @aws-amplify/ui-react で[Amplify UI Library](https://ui.docs.amplify.aws/)を追加する
 - ソースコードも修正する
   - フロントエンド側では、ここで初めてAmplifyを使った機能を組み込んでいる
+- https://github.com/rydeenworks/amplify-myapp/commit/7b6b66512ddd5dde4f4eacd56e877f91e4a3baba
 - 公式ドキュメント
   - [Using the Authenticator](https://docs.amplify.aws/react/build-a-backend/auth/connect-your-frontend/using-the-authenticator/)
   - [Authenticator](https://ui.docs.amplify.aws/react/connected-components/authenticator)
+  
 
 # 参考
 
