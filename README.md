@@ -74,10 +74,17 @@
     - logicalID: auth179371D7, type: AWS::CloudFormation::Stack, reason: resource 'auth179371D7' was created by this deployment
   - AWS CloudFormationサービスのページを確認すると、スタックが構築されていることが確認できた
   - https://github.com/rydeenworks/amplify-myapp/commit/2f3a087442b196d7deacc8c3cc348eb046a44b55
+  - 公式ドキュメント
+    - [Set up Amplify Auth](https://docs.amplify.aws/react/build-a-backend/auth/set-up-auth/)
 
 ### フロントエンド側
 
-
+- npm add @aws-amplify/ui-react で[Amplify UI Library](https://ui.docs.amplify.aws/)を追加する
+- ソースコードも修正する
+  - フロントエンド側では、ここで初めてAmplifyを使った機能を組み込んでいる
+- 公式ドキュメント
+  - [Using the Authenticator](https://docs.amplify.aws/react/build-a-backend/auth/connect-your-frontend/using-the-authenticator/)
+  - [Authenticator](https://ui.docs.amplify.aws/react/connected-components/authenticator)
 
 # 参考
 
