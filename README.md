@@ -86,7 +86,32 @@
 - 公式ドキュメント
   - [Using the Authenticator](https://docs.amplify.aws/react/build-a-backend/auth/connect-your-frontend/using-the-authenticator/)
   - [Authenticator](https://ui.docs.amplify.aws/react/connected-components/authenticator)
+
+## 関数（Lambda）を追加
+
+### バックエンド側
+
+- AWS コンソール画面で追加した関数が確認できた
+- https://github.com/rydeenworks/amplify-myapp/commit/6e63ee1e6095e05d16bcded1e3db2f735bdfb456
+- 公式ドキュメント
+  - [Functions](https://docs.amplify.aws/react/build-a-backend/functions/)
+  - [TypeScript の Lambda 関数ハンドラーの定義](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/typescript-handler.html)
   
+#### Lambdaを呼び出すための権限を付与
+
+- Cognitoで認証したユーザーにLambdaの実行権限を付与する
+- 権限の作法に関するドキュメントの場所は要確認
+- https://github.com/rydeenworks/amplify-myapp/commit/6fc91adb6f63a5b2982b55cae37eee49399ff9c9
+ 
+#### フロントエンドへの連携
+
+- amplify_outputs.jsonにLambda関数名（物理名）を出力する
+- https://github.com/rydeenworks/amplify-myapp/commit/4d737e3a3301ac6fc37c1a3a4661307ec08b5adc
+
+## フロントエンド側
+
+- Lambdaを呼び出す
+- https://github.com/rydeenworks/amplify-myapp/commit/c6a79c044e5da34afa8c1923a3f6495170fbc94e
 
 # 参考
 
