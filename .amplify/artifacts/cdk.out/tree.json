@@ -256,6 +256,60 @@
                           "fqn": "aws-cdk-lib.aws_iam.CfnRole",
                           "version": "2.151.1"
                         }
+                      },
+                      "DefaultPolicy": {
+                        "id": "DefaultPolicy",
+                        "path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/amplifyAuth/authenticatedUserRole/DefaultPolicy",
+                        "children": {
+                          "Resource": {
+                            "id": "Resource",
+                            "path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/amplifyAuth/authenticatedUserRole/DefaultPolicy/Resource",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                              "aws:cdk:cloudformation:props": {
+                                "policyDocument": {
+                                  "Statement": [
+                                    {
+                                      "Action": "lambda:InvokeFunction",
+                                      "Effect": "Allow",
+                                      "Resource": [
+                                        {
+                                          "Ref": "referencetoamplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputsamplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn"
+                                        },
+                                        {
+                                          "Fn::Join": [
+                                            "",
+                                            [
+                                              {
+                                                "Ref": "referencetoamplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputsamplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn"
+                                              },
+                                              ":*"
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "Version": "2012-10-17"
+                                },
+                                "policyName": "amplifyAuthauthenticatedUserRoleDefaultPolicy82E52873",
+                                "roles": [
+                                  {
+                                    "Ref": "amplifyAuthauthenticatedUserRoleD8DA3689"
+                                  }
+                                ]
+                              }
+                            },
+                            "constructInfo": {
+                              "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
+                              "version": "2.151.1"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_iam.Policy",
+                          "version": "2.151.1"
+                        }
                       }
                     },
                     "constructInfo": {
@@ -417,6 +471,14 @@
                   "version": "10.3.0"
                 }
               },
+              "reference-to-amplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputs.amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn": {
+                "id": "reference-to-amplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputs.amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn",
+                "path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/reference-to-amplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputs.amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnParameter",
+                  "version": "2.151.1"
+                }
+              },
               "amplifygen2apprydeensandbox012aa54a1eauthamplifyAuthUserPool3C168381Ref": {
                 "id": "amplifygen2apprydeensandbox012aa54a1eauthamplifyAuthUserPool3C168381Ref",
                 "path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/amplifygen2apprydeensandbox012aa54a1eauthamplifyAuthUserPool3C168381Ref",
@@ -457,6 +519,14 @@
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::CloudFormation::Stack",
                   "aws:cdk:cloudformation:props": {
+                    "parameters": {
+                      "referencetoamplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputsamplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn": {
+                        "Fn::GetAtt": [
+                          "function1351588B",
+                          "Outputs.amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn"
+                        ]
+                      }
+                    },
                     "tags": [
                       {
                         "key": "amplify:deployment-type",
@@ -483,7 +553,7 @@
                           {
                             "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                           },
-                          "/a826d07665f63c157487b6426045975184ae776c0ac692a049018b3a990fae77.json"
+                          "/e7f94374d62aa536505b63409a31f97a386b85cb33e5bdcbbfaa0a6f90daf0e6.json"
                         ]
                       ]
                     }
@@ -845,6 +915,14 @@
                   "version": "10.3.0"
                 }
               },
+              "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn": {
+                "id": "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn",
+                "path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/function/amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnOutput",
+                  "version": "2.151.1"
+                }
+              },
               "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref": {
                 "id": "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref",
                 "path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/function/amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref",
@@ -895,7 +973,7 @@
                           {
                             "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                           },
-                          "/06556c9b8747b294735e5ace56634e7e051c77a8bbf9a62ff01da6c8ea0fab1d.json"
+                          "/f2e3a3086db6cebfcf3d0171ccca1699289e9787402c6037fc979c5dc3698306.json"
                         ]
                       ]
                     }

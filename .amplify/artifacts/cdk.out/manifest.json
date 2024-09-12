@@ -22,7 +22,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/bbdff17cf464cc51f8860b07b75117f8535ca867a895c675babf79806f9e02a6.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/990246cbb431766e1f0357c85c565386aebe45b7a11937f8b6a00b5891ca47e8.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -89,6 +89,12 @@
             "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
           }
         ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/amplifyAuth/authenticatedUserRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthauthenticatedUserRoleDefaultPolicy82E52873"
+          }
+        ],
         "/amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
@@ -111,6 +117,12 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/reference-to-amplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputs.amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputsamplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn"
           }
         ],
         "/amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/amplifygen2apprydeensandbox012aa54a1eauthamplifyAuthUserPool3C168381Ref": [
@@ -273,6 +285,12 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn"
           }
         ],
         "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref": [

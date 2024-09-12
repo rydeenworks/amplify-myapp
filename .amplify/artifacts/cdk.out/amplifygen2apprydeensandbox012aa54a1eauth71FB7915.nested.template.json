@@ -176,6 +176,45 @@
     "aws:cdk:path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/amplifyAuth/authenticatedUserRole/Resource"
    }
   },
+  "amplifyAuthauthenticatedUserRoleDefaultPolicy82E52873": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": "lambda:InvokeFunction",
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Ref": "referencetoamplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputsamplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn"
+        },
+        {
+         "Fn::Join": [
+          "",
+          [
+           {
+            "Ref": "referencetoamplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputsamplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn"
+           },
+           ":*"
+          ]
+         ]
+        }
+       ]
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "amplifyAuthauthenticatedUserRoleDefaultPolicy82E52873",
+    "Roles": [
+     {
+      "Ref": "amplifyAuthauthenticatedUserRoleD8DA3689"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/amplifyAuth/authenticatedUserRole/DefaultPolicy/Resource"
+   }
+  },
   "amplifyAuthunauthenticatedUserRole2B524D9E": {
    "Type": "AWS::IAM::Role",
    "Properties": {
@@ -277,7 +316,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/02LQQ6CQAxFz8J+qIGEAxhWbozBuDbjTNUitAlTJGYydzeEoKz++6/9JRRVAUVmp5A7/8o7ukE8YlD0Z7XuZewUrtHJg0kF4iXgcBLpTH3nH69Qd4Ss29PfHDyykn7W8bY30uFe1bpnj6zJkO0hznJ+nDMl02CQcXCL2nAt7ElJOBkWj9CG3bssoYIiawNRPoys1CM0S34BCSxzYO8AAAA="
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/02LzwqCQBDGn6X7OqHgA4SnLiFG59h2p5pcZ8CdCpF99zCxPH2/718BeZlDvrHvmDnfZoEuMB4wKvqjWtca+47n0cmNSQXGU8S+FgmmuvKPF6gCIeu6+id7j6ykw3Je+0YC7lStu3fImgzZDsYpnIZfrSWQGyY7U0qmwSjP3s2bFVfCnpSEk2HxCI+4fRUFlJBvHpEo65+s1CE0s34Aknm2kgABAAA="
    },
    "Metadata": {
     "aws:cdk:path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/CDKMetadata/Default"
@@ -493,6 +532,11 @@
      ]
     }
    ]
+  }
+ },
+ "Parameters": {
+  "referencetoamplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputsamplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn": {
+   "Type": "String"
   }
  },
  "Outputs": {

@@ -320,6 +320,14 @@
   }
  },
  "Outputs": {
+  "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn": {
+   "Value": {
+    "Fn::GetAtt": [
+     "helloworldlambda89B27E55",
+     "Arn"
+    ]
+   }
+  },
   "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref": {
    "Value": {
     "Ref": "helloworldlambda89B27E55"

@@ -149,6 +149,14 @@
   "auth179371D7": {
    "Type": "AWS::CloudFormation::Stack",
    "Properties": {
+    "Parameters": {
+     "referencetoamplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputsamplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn": {
+      "Fn::GetAtt": [
+       "function1351588B",
+       "Outputs.amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn"
+      ]
+     }
+    },
     "Tags": [
      {
       "Key": "amplify:deployment-type",
@@ -175,7 +183,7 @@
        {
         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
        },
-       "/a826d07665f63c157487b6426045975184ae776c0ac692a049018b3a990fae77.json"
+       "/e7f94374d62aa536505b63409a31f97a386b85cb33e5bdcbbfaa0a6f90daf0e6.json"
       ]
      ]
     }
@@ -217,7 +225,7 @@
        {
         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
        },
-       "/06556c9b8747b294735e5ace56634e7e051c77a8bbf9a62ff01da6c8ea0fab1d.json"
+       "/f2e3a3086db6cebfcf3d0171ccca1699289e9787402c6037fc979c5dc3698306.json"
       ]
      ]
     }
