@@ -24,5 +24,8 @@
     },
     "unauthenticated_identities_enabled": true
   },
-  "version": "1"
+  "version": "1",
+  "custom": {
+    "helloWorldFunctionName": "amplify-gen2app-rydeen-sa-helloworldlambda89B27E55-irHZBs6E3tPw"
+  }
 }

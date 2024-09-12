@@ -37,6 +37,12 @@
    "stackOutputs": [
     "definedFunctions"
    ]
+  },
+  "AWS::Amplify::Custom": {
+   "version": "1",
+   "stackOutputs": [
+    "customOutputs"
+   ]
   }
  },
  "Outputs": {
@@ -140,6 +146,23 @@
        ]
       },
       "\"]"
+     ]
+    ]
+   }
+  },
+  "customOutputs": {
+   "Value": {
+    "Fn::Join": [
+     "",
+     [
+      "{\"custom\":{\"helloWorldFunctionName\":\"",
+      {
+       "Fn::GetAtt": [
+        "function1351588B",
+        "Outputs.amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref"
+       ]
+      },
+      "\"},\"version\":\"1\"}"
      ]
     ]
    }

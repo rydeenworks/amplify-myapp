@@ -998,6 +998,14 @@
               "version": "2.151.1"
             }
           },
+          "customOutputs": {
+            "id": "customOutputs",
+            "path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/customOutputs",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.151.1"
+            }
+          },
           "CDKMetadata": {
             "id": "CDKMetadata",
             "path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/CDKMetadata",

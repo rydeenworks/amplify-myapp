@@ -22,7 +22,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/990246cbb431766e1f0357c85c565386aebe45b7a11937f8b6a00b5891ca47e8.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/7476ef399150d1dfabdb5a52d78fd93eabd519c69452c382406baaf25a3a0ab1.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -309,6 +309,12 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "definedFunctions"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/customOutputs": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "customOutputs"
           }
         ],
         "/amplify-gen2app-rydeen-sandbox-012aa54a1e/CDKMetadata/Default": [
