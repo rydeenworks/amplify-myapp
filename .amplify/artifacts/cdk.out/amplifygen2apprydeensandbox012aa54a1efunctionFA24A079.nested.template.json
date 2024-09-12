@@ -98,10 +98,135 @@
     "aws:asset:property": "Code"
    }
   },
+  "invokebedrocklambdaServiceRole2FCBF387": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "lambda.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "ManagedPolicyArns": [
+     {
+      "Fn::Join": [
+       "",
+       [
+        "arn:",
+        {
+         "Ref": "AWS::Partition"
+        },
+        ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+       ]
+      ]
+     }
+    ],
+    "Tags": [
+     {
+      "Key": "amplify:deployment-type",
+      "Value": "sandbox"
+     },
+     {
+      "Key": "amplify:friendly-name",
+      "Value": "invoke-bedrock"
+     },
+     {
+      "Key": "created-by",
+      "Value": "amplify"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/function/invoke-bedrock-lambda/ServiceRole/Resource"
+   }
+  },
+  "invokebedrocklambdaServiceRoleDefaultPolicy03E99BDF": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": [
+        "bedrock:InvokeModel",
+        "bedrock:InvokeModelWithResponseStream"
+       ],
+       "Effect": "Allow",
+       "Resource": "arn:aws:bedrock:us-east-1::foundation-model/*"
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "invokebedrocklambdaServiceRoleDefaultPolicy03E99BDF",
+    "Roles": [
+     {
+      "Ref": "invokebedrocklambdaServiceRole2FCBF387"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/function/invoke-bedrock-lambda/ServiceRole/DefaultPolicy/Resource"
+   }
+  },
+  "invokebedrocklambda0FD83EDB": {
+   "Type": "AWS::Lambda::Function",
+   "Properties": {
+    "Code": {
+     "S3Bucket": {
+      "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
+     },
+     "S3Key": "e97247b6e014a1e5b831fe7e8c745a45adf0272f29ddf6e3a17a9ac3dd638915.zip"
+    },
+    "Environment": {
+     "Variables": {
+      "AMPLIFY_SSM_ENV_CONFIG": "{}"
+     }
+    },
+    "Handler": "index.handler",
+    "MemorySize": 512,
+    "Role": {
+     "Fn::GetAtt": [
+      "invokebedrocklambdaServiceRole2FCBF387",
+      "Arn"
+     ]
+    },
+    "Runtime": "nodejs18.x",
+    "Tags": [
+     {
+      "Key": "amplify:deployment-type",
+      "Value": "sandbox"
+     },
+     {
+      "Key": "amplify:friendly-name",
+      "Value": "invoke-bedrock"
+     },
+     {
+      "Key": "created-by",
+      "Value": "amplify"
+     }
+    ],
+    "Timeout": 3
+   },
+   "DependsOn": [
+    "invokebedrocklambdaServiceRoleDefaultPolicy03E99BDF",
+    "invokebedrocklambdaServiceRole2FCBF387"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/function/invoke-bedrock-lambda/Resource",
+    "aws:asset:path": "asset.e97247b6e014a1e5b831fe7e8c745a45adf0272f29ddf6e3a17a9ac3dd638915",
+    "aws:asset:is-bundled": true,
+    "aws:asset:property": "Code"
+   }
+  },
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/zWOOw6DMBBEz5LebASIAwRLKSngAGixF2Q+a4m1Q4G4ewSI6hUz8zQZpEUK6Qs3SYydktl1sFckgWwT0EwKN2n3GZfOYsve0ihQXfhGNsF5Vg4X2Gs/k9I9nzyU5C2KUBD4nFCSQxnNRKFEIXXbQPf8OA5Vk/i4GlLXoAk4OB4u4RPonrVn6+7+eQVGef+yDApIX6M4l6yRg1sI6pt/LUNYWdwAAAA="
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/zWOXQqDQAyEz9L3NWUtHqBd6GMp9gASd2OJP1kwa6WIdy8qffoyTDKZHGxhwZ5w1syHLuu5huVBmii8EvrO4KzV0uNQB6wkBmoVHjvuk/jEUQzjAEsZezKukZ3P2LP/bvKYVqOXClUpKVw3GL3AbfIdpRsqmSMeXCP/0NWUpHEaPZn94JXwzfLeP/wN14iLEvjY37pBq+dPnkMB9tQqczZOknggKA/+ABT3PqvtAAAA"
    },
    "Metadata": {
     "aws:cdk:path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/function/CDKMetadata/Default"
@@ -328,9 +453,22 @@
     ]
    }
   },
+  "amplifygen2apprydeensandbox012aa54a1efunctioninvokebedrocklambda63425FEFArn": {
+   "Value": {
+    "Fn::GetAtt": [
+     "invokebedrocklambda0FD83EDB",
+     "Arn"
+    ]
+   }
+  },
   "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref": {
    "Value": {
     "Ref": "helloworldlambda89B27E55"
+   }
+  },
+  "amplifygen2apprydeensandbox012aa54a1efunctioninvokebedrocklambda63425FEFRef": {
+   "Value": {
+    "Ref": "invokebedrocklambda0FD83EDB"
    }
   }
  }

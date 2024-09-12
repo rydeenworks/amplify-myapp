@@ -22,7 +22,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/7476ef399150d1dfabdb5a52d78fd93eabd519c69452c382406baaf25a3a0ab1.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/2352e28eb7daa73438518d1e34aaa012ba62e639647323a768e807348f9d96e2.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -123,6 +123,12 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "referencetoamplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputsamplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/reference-to-amplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputs.amplifygen2apprydeensandbox012aa54a1efunctioninvokebedrocklambda63425FEFArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygen2apprydeensandbox012aa54a1efunctionNestedStackfunctionNestedStackResource999ACA52Outputsamplifygen2apprydeensandbox012aa54a1efunctioninvokebedrocklambda63425FEFArn"
           }
         ],
         "/amplify-gen2app-rydeen-sandbox-012aa54a1e/auth/amplifygen2apprydeensandbox012aa54a1eauthamplifyAuthUserPool3C168381Ref": [
@@ -275,6 +281,24 @@
             "data": "helloworldlambda89B27E55"
           }
         ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/invoke-bedrock-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "invokebedrocklambdaServiceRole2FCBF387"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/invoke-bedrock-lambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "invokebedrocklambdaServiceRoleDefaultPolicy03E99BDF"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/invoke-bedrock-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "invokebedrocklambda0FD83EDB"
+          }
+        ],
         "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
@@ -293,10 +317,22 @@
             "data": "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Arn"
           }
         ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/amplifygen2apprydeensandbox012aa54a1efunctioninvokebedrocklambda63425FEFArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygen2apprydeensandbox012aa54a1efunctioninvokebedrocklambda63425FEFArn"
+          }
+        ],
         "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref": [
           {
             "type": "aws:cdk:logicalId",
             "data": "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/amplifygen2apprydeensandbox012aa54a1efunctioninvokebedrocklambda63425FEFRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygen2apprydeensandbox012aa54a1efunctioninvokebedrocklambda63425FEFRef"
           }
         ],
         "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function.NestedStack/function.NestedStackResource": [
