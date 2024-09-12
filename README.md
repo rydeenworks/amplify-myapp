@@ -108,10 +108,20 @@
 - amplify_outputs.jsonにLambda関数名（物理名）を出力する
 - https://github.com/rydeenworks/amplify-myapp/commit/4d737e3a3301ac6fc37c1a3a4661307ec08b5adc
 
-## フロントエンド側
+### フロントエンド側
 
 - Lambdaを呼び出す
 - https://github.com/rydeenworks/amplify-myapp/commit/c6a79c044e5da34afa8c1923a3f6495170fbc94e
+
+## 関数（Lambda）を追加（発展編）
+
+### バックエンド側
+
+- https://github.com/rydeenworks/amplify-myapp/commit/33a30a163de4b9731476ee7f3e0f6543af109704
+
+### フロントエンド側
+
+- https://github.com/rydeenworks/amplify-myapp/commit/58823e0cb80aa6c8e224c6bf55e9539effe04c13
 
 # 参考
 
