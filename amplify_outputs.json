@@ -26,6 +26,7 @@
   },
   "version": "1",
   "custom": {
-    "helloWorldFunctionName": "amplify-gen2app-rydeen-sa-helloworldlambda89B27E55-irHZBs6E3tPw"
+    "helloWorldFunctionName": "amplify-gen2app-rydeen-sa-helloworldlambda89B27E55-irHZBs6E3tPw",
+    "invokeBedrockFunctionName": "amplify-gen2app-rydeen-sa-invokebedrocklambda0FD83-s75tIj3kZc3r"
   }
 }
