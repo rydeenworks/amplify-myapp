@@ -120,6 +120,7 @@
 - awslambda.streaifyResponseのところがTypeScriptの型チェックで赤線エラー出る
   - LambdaのNode.jsランタイム環境に組み込まれているものなので問題ないらしい(要確認)
   - 参考) https://docs.aws.amazon.com/lambda/latest/dg/config-rs-write-functions.html
+  - 参考) https://developer.mamezou-tech.com/blogs/2023/04/23/lambda-response-streaming-intro/
 - https://github.com/rydeenworks/amplify-myapp/commit/33a30a163de4b9731476ee7f3e0f6543af109704
 
 ### フロントエンド側
