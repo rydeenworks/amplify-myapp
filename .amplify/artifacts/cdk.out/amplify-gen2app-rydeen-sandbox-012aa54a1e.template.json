@@ -31,6 +31,12 @@
     "oauthResponseType",
     "oauthClientId"
    ]
+  },
+  "AWS::Amplify::Function": {
+   "version": "1",
+   "stackOutputs": [
+    "definedFunctions"
+   ]
   }
  },
  "Outputs": {
@@ -120,6 +126,23 @@
      "Outputs.amplifygen2apprydeensandbox012aa54a1eauthamplifyAuthUserPoolAppClient2BECF0D5Ref"
     ]
    }
+  },
+  "definedFunctions": {
+   "Value": {
+    "Fn::Join": [
+     "",
+     [
+      "[\"",
+      {
+       "Fn::GetAtt": [
+        "function1351588B",
+        "Outputs.amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref"
+       ]
+      },
+      "\"]"
+     ]
+    ]
+   }
   }
  },
  "Resources": {
@@ -162,6 +185,48 @@
    "Metadata": {
     "aws:cdk:path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/auth.NestedStack/auth.NestedStackResource",
     "aws:asset:path": "amplifygen2apprydeensandbox012aa54a1eauth71FB7915.nested.template.json",
+    "aws:asset:property": "TemplateURL"
+   }
+  },
+  "function1351588B": {
+   "Type": "AWS::CloudFormation::Stack",
+   "Properties": {
+    "Tags": [
+     {
+      "Key": "amplify:deployment-type",
+      "Value": "sandbox"
+     },
+     {
+      "Key": "created-by",
+      "Value": "amplify"
+     }
+    ],
+    "TemplateURL": {
+     "Fn::Join": [
+      "",
+      [
+       "https://s3.",
+       {
+        "Ref": "AWS::Region"
+       },
+       ".",
+       {
+        "Ref": "AWS::URLSuffix"
+       },
+       "/",
+       {
+        "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
+       },
+       "/06556c9b8747b294735e5ace56634e7e051c77a8bbf9a62ff01da6c8ea0fab1d.json"
+      ]
+     ]
+    }
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-gen2app-rydeen-sandbox-012aa54a1e/function.NestedStack/function.NestedStackResource",
+    "aws:asset:path": "amplifygen2apprydeensandbox012aa54a1efunctionFA24A079.nested.template.json",
     "aws:asset:property": "TemplateURL"
    }
   },

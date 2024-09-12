@@ -22,7 +22,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/53872b9a0d17a70fbba03224fbd49b4725df703946b8f161aeb2345bd0bbe39d.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/bbdff17cf464cc51f8860b07b75117f8535ca867a895c675babf79806f9e02a6.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -249,6 +249,48 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "oauthClientId"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/hello-world-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloworldlambdaServiceRole1E1C4841"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/hello-world-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloworldlambda89B27E55"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function/amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygen2apprydeensandbox012aa54a1efunctionhelloworldlambdaD4F39080Ref"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/function.NestedStack/function.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "function1351588B"
+          }
+        ],
+        "/amplify-gen2app-rydeen-sandbox-012aa54a1e/definedFunctions": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "definedFunctions"
           }
         ],
         "/amplify-gen2app-rydeen-sandbox-012aa54a1e/CDKMetadata/Default": [
