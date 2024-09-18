@@ -126,6 +126,16 @@
 ### フロントエンド側
 
 - https://github.com/rydeenworks/amplify-myapp/commit/58823e0cb80aa6c8e224c6bf55e9539effe04c13
+- Bedrockのレスポンスが表示されない課題あり
+  - バックエンドで作成したLambda関数はAWSコンソール画面で確認できた
+  - 関数のInvocationsグラフから呼び出せていることは確認できた
+  - Error count and success rateグラフから呼び出しがErrorとなっていることがわかった
+  - CloudWatchログを見るとエラー原因がわかった
+    - "errorType": "AccessDeniedException",
+    - "errorMessage": "You don't have access to the model with the specified model ID."
+  - Handler.tsの以下の実装に関連した問題と推測する、こんなモデルは用意した記憶がない
+    - const modelId = "anthropic.claude-3-haiku-20240307-v1:0"
+  - [SDKのデベロッパーガイド](https://docs.aws.amazon.com/ja_jp/sdk-for-javascript/v3/developer-guide/javascript_bedrock_code_examples.html)を見るとモデルを列挙するサンプルコードがあるので試してみる
 
 # 参考
 

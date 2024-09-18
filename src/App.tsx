@@ -34,10 +34,12 @@ function App() {
   }
 
   async function invokeBedrock() {
-
+    console.log("invokeBedrock")
     const { credentials } = await fetchAuthSession()
     const awsRegion = outputs.auth.aws_region
     const functionName = outputs.custom.invokeBedrockFunctionName
+
+    console.log(functionName)
 
     const labmda = new LambdaClient({ credentials: credentials, region: awsRegion })
     const command = new InvokeWithResponseStreamCommand({
